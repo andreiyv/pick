@@ -5,6 +5,13 @@ import android.opengl.Matrix;
 
 import javax.microedition.khronos.opengles.GL10;
 
+// http://android-raypick.blogspot.ru/2012/04/first-i-want-to-state-this-is-my-first.html
+// http://geomalgorithms.com/a06-_intersect-2.html#Segment-Plan
+// http://magicscrollsofcode.blogspot.ru/2010/10/3d-picking-in-android.html
+
+// https://www.ovcharov.me/2011/01/14/android-opengl-es-ray-picking/
+
+
 public class Ray {
 
     float[] P0;
