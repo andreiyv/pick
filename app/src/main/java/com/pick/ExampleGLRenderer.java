@@ -1,12 +1,12 @@
 package com.pick;
 
-        import java.util.ArrayList;
-        import java.util.List;
-
-        import javax.microedition.khronos.egl.EGLConfig;
-        import javax.microedition.khronos.opengles.GL10;
-
         import android.opengl.GLSurfaceView.Renderer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
 
 public class ExampleGLRenderer implements Renderer {
 
@@ -30,10 +30,12 @@ public class ExampleGLRenderer implements Renderer {
         gl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_NICEST);
 
         //add 4 test objects to the scene
-        slides.add(new ExampleGLObject("red", new float[] {1, 0, 0, 1}, new float[] {0, 0, .5f}));
+        slides.add(new ExampleGLObject("red", new float[] {1, 0, 0, 1}, new float[] {-0.5f, 0, .5f}));
         slides.add(new ExampleGLObject("yellow", new float[] {1, 1, 0, 1}, new float[] {.5f, .5f, 1f}));
         slides.add(new ExampleGLObject("green", new float[] {0, 1, 0, 1}, new float[] {-1.2f, 0, 0}));
-        slides.add(new ExampleGLObject("blue", new float[] {0, 0, 1, 1}, new float[] {.5f, -1f, 0}));
+        slides.add(new ExampleGLObject("blue", new float[] {0, 0, 1, 1}, new float[] {-1.0f, 0, -1.0f}));
+        slides.add(new ExampleGLObject("magenta", new float[] {0, 0.5f, 0, 1}, new float[] {-0.9f, 0.1f, -1.5f}));
+
     }
 
     public void onDrawFrame(GL10 gl) {
